@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="APPASS.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:APPASS.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Frame x:Name="MainPanel">
+
+        </Frame>
+        <NavigationView x:Name="nvSample" HorizontalAlignment="Left" Width="1719">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tapped="ListSongNavigate" Icon="MusicInfo" Content="List Song" Tag="SamplePage1" />
+                <NavigationViewItem Tapped="RegisterSongPageNavigate" Icon="Add" Content="Register Song" Tag="SamplePage2" />
+                <NavigationViewItem Tapped="LoginFormNavigate" Icon="Refresh" Content="Log Out" Tag="SamplePage3" />
+            </NavigationView.MenuItems>
+            <Frame x:Name="contentFrame" Margin="0,0,203,0"/>
+        </NavigationView>
+    </Grid>
+</Page>

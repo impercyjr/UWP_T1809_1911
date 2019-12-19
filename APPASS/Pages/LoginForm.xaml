@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="APPASS.Pages.LoginForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:APPASS.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Margin="50">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="50">WellCome</TextBlock>
+        <Grid Grid.Column="1" Grid.Row="1" Margin="20">
+            <StackPanel  >
+                <TextBlock Margin="5" FontSize="10" >UserName</TextBlock>
+                <TextBox Margin="5" Height="25" HorizontalAlignment="Left" Width="130"/>
+                <TextBlock Margin="5" FontSize="10">PassWord</TextBlock>
+                <TextBox  Margin="5" Height="25" HorizontalAlignment="Left" Width="130"/>
+            </StackPanel>
+        </Grid>
+        <Grid  Grid.Column="1" Grid.Row="2" >
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Orientation="Horizontal">
+                <Button Width="80" Height="40" Click="Button_Click" Margin="10">Login</Button>
+                <Button Width="80" Height="40" Click="Button_Click_1">Register</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
